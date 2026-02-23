@@ -51,14 +51,26 @@ bun run format
 
 ```
 app/
-├── globals.css    # TailwindCSS v4 + DaisyUI v5 config
-├── layout.tsx     # Root layout
-└── page.tsx       # Homepage
-public/            # Static assets
-biome.json         # Biome linter + formatter config
-next.config.ts     # Next.js config
-postcss.config.mjs # PostCSS config
-tsconfig.json      # TypeScript config
+├── about/
+│   └── page.tsx               # About page
+├── contact/
+│   └── page.tsx               # Contact page
+├── dashboard/
+│   └── page.tsx               # Dashboard page
+├── globals.css                # TailwindCSS v4 + DaisyUI v5 config
+├── layout.tsx                 # Root layout
+└── page.tsx                   # Homepage (composes components)
+components/
+├── dark-mode-alert.tsx        # Dark mode info alert
+├── getting-started-card.tsx   # Getting started card with doc links
+├── hero.tsx                   # Hero section
+├── tech-badges.tsx            # Tech stack badge row
+└── tech-stack-table.tsx       # Tech stack overview table
+public/                        # Static assets
+biome.json                     # Biome linter + formatter config
+next.config.ts                 # Next.js config
+postcss.config.mjs             # PostCSS config
+tsconfig.json                  # TypeScript config
 ```
 
 ## Theming

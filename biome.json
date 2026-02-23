@@ -1,7 +1,7 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.2/schema.json",
 	"files": {
-		"includes": ["**", "!.next", "!out", "!build"]
+		"includes": ["**", "!.next", "!out", "!build", "!.vercel"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -31,7 +31,14 @@
 							"fetchCache",
 							"preferredRegion",
 							"runtime",
-							"maxDuration"
+							"maxDuration",
+							"GET",
+							"POST",
+							"PUT",
+							"DELETE",
+							"PATCH",
+							"HEAD",
+							"OPTIONS"
 						]
 					}
 				}
